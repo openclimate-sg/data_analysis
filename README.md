@@ -11,7 +11,7 @@ We explore what we can get from the semantics of the texts submitted by actors
 For demonstrative purpose we look at semantic similarity between several commitments put forward in the action plans of the Covenant of Mayors (CoM) members, and some of the actions identified as most urgent and effective in the World Scientists’ Warning of a Climate Emergency (citation). To achieve this we make use of Google’s pre-trained Universal Sentence Encoder model (Cer et al., 2018), which encodes text in high dimensional vectors. 
 
 
-![Semantic](semantic_sim_0.png)
+![Semantic](semantic0.png)
 - semantic plot + list of example texts
 
 
