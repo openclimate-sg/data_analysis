@@ -59,5 +59,27 @@ To be completed:
 1. Building the training set with Snorkel 
 2. Building the Classification model 
 
+## Sentiment Analysis
+
+We perform a sentiment analysis of the text submitted by actors in climate action dataset. 
+
+For our demo, we perform this analysis on a dataset of 1162 cities in the EU Covenant of Mayors (CoM) members. The sentiment analysis is performed using the [Allennlp](https://github.com/allenai/allennlp/ "Title") package. 
+
+The subject of sentiment analysis is to classify the "sentiment" or polarity of a given text at the document, sentence, or feature/aspect level - whether the expressed opinion in a document, a sentence or an entity feature/aspect is positive, negative, or neutral. 
+
+Using Allennlp, we first train the model on the Stanford Sentiment treebank, and use the model to predict the sentiment of climate action plan texts. The goal is to explore whether performing the sentiment analysis can be an important "marker" to reveal some information about the nature of actors. 
+
+## Consistency Score 
+
+From the EU CoM dataset, we extract, what we call the "consistency score" to determine if actors are consistent with their proposed action plans to reduce/offset emissions.  
+
+We calculate the promised rate of CO2 emission reduction as promised by the actors as well as their current rate of emission reduction. All reduction rates are calculated with respect to the baseline year as reported by individual actors. The actors in the dataset also promised a certain target, a target year and report their current total emissions. 
+
+If the current rate is greater or equal to the promised rate, then the actors are awarded a consistency score of 1, otherwise they are inconsistent and given a score of 0. 
+
+We find that the average current rate / promised rate is around 1.07 for our dataset. The overall framework of our analysis model is to use different markers: semantic similarity, sentiment and urgency to see if our model can learn to predict whether the actors will be "good" (consistent) or "bad" (failing to meet their promise). 
+
+
+
 
 
