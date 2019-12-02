@@ -1,10 +1,9 @@
 # data_analysis
-Work done for the Yale Open Climate Collabathon
 
+## Overview
 
-Why is this useful? 
+We analyse different aspects of the texts submitted by actors using NLP tools which could be used in the efforts to automate the action tracking given large and inconsistent datasets. 
 
-Given the goal of understanding the likelihood of an actor to deliver on the commitments, this is used as a proxy of how they’re approaching their efforts
 
 ## Semantic similarity 
 
