@@ -78,7 +78,10 @@ If the current rate is greater or equal to the promised rate, then the actors ar
 
 We find that the average current rate / promised rate is around 1.07 for our dataset. The overall framework of our analysis model is to use different markers: semantic similarity, sentiment and urgency to see if our model can learn to predict whether the actors will be "good" (consistent) or "bad" (failing to meet their promise). 
 
+## PDF Parser 
 
+Most of the documents and proposals pertaining to climate change and climate action are in the PDF file format . With growing number of actors and agencies working on climate action, it is not possible to read through each and every proposal manually and extract relevant data. There is a need to analyze these proposals and quantify the data present in them using programs which can read and understand the PDF files for extraction of relevant data. PDF parsers combined with NLP can be implemented to achieve this.
 
+To demonstrate this, we have used the PyPDF2 to parse the PDFs and the Spacy Library to use NLP for information extraction. We use the default NER (Named Entity Recognition)  models available with Spacy to identify various actors . Finally the data is extracted using some simple rule based matching combined with Part Of Speech tagging into a Pandas Dataframe. For demonstration purposes, this extraction was carried out on some manufactured sentences.
 
-
+The PDF parser is still a work in progress with need for much robust and context specific NER models. There also is a need for developing methodologies to deal with non-textual content such as images and graphs which can contain a lot of relevant information. 
